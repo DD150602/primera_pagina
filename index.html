@@ -4,113 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mi primera web</title>
-    <style>
-        table, th, td {
-            border: 1px solid black
-        }
-    </style>
+    <title>Blog de Dylan</title>
+    <link rel="stylesheet" href="colores.css"/>
 </head>
 <body>
-    <table style="width: 500px;">
-        <!--tr es una fila en la tabla-->
-        <thead>
-            <tr>
-                <!--th es una cabecera-->
-                <th>producto</th>
-                <th>precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <!--td es para definir elementos estandares dentro de la tabla-->
-                <td>Hola que hace</td>
-                <td>amigo</td>
-            </tr>
-            <tr>
-                <td>cola rosa</td>
-                <td>$5.000</td>
-            </tr>
-            <tr>
-                <td>cola verde</td>
-                <td>$6.000</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <td></td>
-            <td>Total $11.000</td>
-        </tfoot>
-    </table>
-
-
-
-    <!--ul es lista no ordenada-->
-    <!--li es un item de lista-->
-    <ul>
-        <li>elemento 1</li>
-        <li>elemento 2</li>
-        <li>elemento 3</li>
-        <li>elemento 4</li>
-    </ul>
-    <!--ol es lista ordenada-->
-    <ol>
-        <li>elemento 1</li>
-        <li>elemento 2</li>
-        <li>elemento 3</li>
-        <li>elemento 4</li>
-        <li>
-            <ol>
-                <li style="list-style-type: lower-roman;">sub elemento 1</li>
-                <li style="list-style-type: lower-roman;">sub elemento 2</li>
-                <li style="list-style-type: lower-roman;">sub elemento 3</li>
-                <li style="list-style-type: lower-roman;">sub elemento 4</li>
-            </ol>
-        </li>
-    </ol>
-
-
-
-    <!--la etiqueta form es para agregar formularios-->
-    <!--la etiqueta action sirve para dirigir los datos ingreasos a el lugsr deseado-->
-    <!--method="get" sirve para enviar los valores dentro de los campos atraves de la url-->
-    <form action="/formulario" method="post">
-        <!--la etiqueta label es para saver cual dato se esta solicitando-->
-        <label for="nombre">Nombre</label>
-        <!--la propiedad name resive una llave y un valos que se almacena en nombre-->
-        <!--la etiqueta type es para para que se comporte diferente el imput dependiendo la propiedad-->
-        <!--value le da un valor por defecto a los inputs-->
-        <input value="puerquito" type="text" id="nombre" name="nombre" placeholder="Nombre" />
-        <br>
-        <label for="apellido" >Apellido</label>
-        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Apellido"/>
-        <br>
-        <!--la etiqueta textarea es para ingresar algun tipo de texto-->
-        <label for="comentario">Comentarios</label>
-        <textarea name="comentario" id="comentario" cols="20" rows="5" placeholder="ingrese comentario">este es un valor por defecto</textarea>
-        <br>
-        <button type="button">Enviar</button>
-        <button type="reset">reset</button>
-        <button type="submit">submit</button>
-    </form>
-    <!--los H son para tituos y sbtitulos-->
-    <h1>Mi primer heading</h1>
-    <h2>Mi segundo heading</h2>
-    <h3>Mi tercer heading</h3>
-    <h4>Mi cuarto heading</h4>
-    <h5>Mi quinto heading</h5>
-    <h6>puerquito salchicha</h6>
-    <!--la etiqueta P es para colocar parrafo-->
-    <p>chanchito feliz esta feliz.</p>
-    <p>chancito triste esta triste</p>
-    <!--la etiqueta hr es para colocar una linea y separar textos-->
-    <hr>
-    <h2>chanchito felipe</h2>
-    <p>mucho texto en el estacio <br> del <span style="color:blue">texto donde va el texto</span></p>
-    <!-- este es un comentario y no aparece en el navegador-->
-    <!--la etiqueta A sirve para direccionar a un link-->
-    <a href="https://www.google.com">Ir a google</a>
-    <!--la etiqueta  img es para agregar imagenes y la etiqueta width y heigth es para el ancho y el alto de la imagen-->
-    <img src="imgs/elkokun.jpg" width="400" />
-    
+    <!--header es para adjuntar links o cabeseras-->
+    <header>
+        <h1 id="titulo">Blog de Dylan</h1>
+    </header>
+    <div>
+        <p class="texto">soy un parrafo dentro de un div</p>
+    </div>
+    <!--section es para deficnir secciones en la pagina web-->
+    <section>
+        <article class="post">
+            <h2>Titulo de mi post</h2>
+            <p class="texto">Descripcion del post</p>
+            <img src="imgs/elkokun.jpg" width="300" />
+            <p class="texto">este es un texto de prueva donde se vean los textos de prueva</p>
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 2</h2>
+            <p class="texto">Descripcion del post 2</p>
+            <img src="imgs/kokun_ssj3.jpg" width="300" />
+            <p class="texto">este es un texto de prueva donde se vean los textos de prueva 2</p>
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 3</h2>
+            <p class="texto">Descripcion del post 3</p>
+            <img src="imgs/la_18.jpg" width="300" />
+            <p class="texto">este es un texto de prueva donde se vean los textos de prueva 2</p>
+        </article>
+    </section>
+    <!--footer es para agregar pies de paginas-->
+    <footer>
+        <a href="#titulo">Ir arriva</a>
+        <a href="mailto:dylan@gmail.com">Contactame aqui.</a>
+        <p>Copyrigth 2023</p>
+    </footer>
 </body>
 </html>
